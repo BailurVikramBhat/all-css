@@ -1,3 +1,3 @@
 # User Profile Card Layout
 
-![Demo](/demo.png)
+![Layout](demo.png)
