@@ -30,7 +30,11 @@
               <li><a href="#">Home</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Contact</a></li>
-              <li><a href="#" id="sign-in" class="sign-in">Sign In</a></li>
+              <li>
+                <a href="#" id="sign-in" onclick="showPopup()" class="sign-in"
+                  >Sign In</a
+                >
+              </li>
             </ul>
           </div>
           <div class="hamburger">
@@ -41,7 +45,58 @@
         </span>
       </div>
     </nav>
-    <section></section>
+    <section>
+      <div class="login-main" id="login-main">
+        <div class="login-container">
+          <h1>Let's Get Started!</h1>
+          <div class="profile-icons">
+            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input
+                type="email"
+                class="form-control is-valid"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >We'll never share your email with anyone else.</small
+              >
+            </div>
+            <div class="form-group" id="password-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input
+                type="password"
+                class="form-control is-invalid"
+                id="exampleInputPassword1"
+                placeholder="Password"
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >Please choose a secure password.</small
+              >
+              <span class="forgot-password"
+                ><a href="#">Forgot password?</a></span
+              >
+            </div>
+            <div class="end-group">
+              <label for="conditions"
+                ><input type="checkbox" name="conditions" id="conditions" />I
+                agree to the terms & conditions</label
+              >
+
+              <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-right-to-bracket"></i>Login
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
     <footer>&COPY; @Vikram Bhat, All Rights Reserved.</footer>
     <script src="app.js"></script>
   </body>

@@ -7,3 +7,8 @@ function addMovement() {
   navMenu.classList.toggle("active");
   console.log("clicked");
 }
+const popup = document.getElementById("login-main");
+
+function showPopup() {
+  popup.classList.toggle("open-popup");
+}
